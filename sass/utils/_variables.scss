@@ -1,0 +1,29 @@
+// колір заголовків, головний текст на світлому фоні
+$maintext-color: #212121; 
+// текст на темному фоні
+$light-maintext-color: #ffffff;
+// колір параграфів, контактів
+$paragraph-color: #757575;
+// "фірмовий головний" колір, колір кнопок.
+$logo-color:#2196F3;
+// головний колір на темному фоні
+$light-logo-color: #ffffff;
+// темний лого-колір
+$dark-logo-color: black;
+// колір при ховері
+$hover-color: #2196F3; 
+// колір футера
+$footer-background-color:  #2f303a;
+// головний задній фон. 
+$primary-background-color: #E5E5E5;
+// другорядний задній фон, фон на "Наша команда", на іконках в студії, навігація в портфоліо.
+$secondary-background-color: #F5F4FA;
+// колір задній на карточках
+$card-background-color: #ffffff;
+// колір іконок без ховера
+$icon-color: #AFB1B8;
+
+// час появи 
+$transition-duration: 250ms;
+// стиль появи
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

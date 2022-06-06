@@ -1,0 +1,84 @@
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    
+
+}
+
+.card-set__item {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+    border: #eeeeee solid 1px;
+
+}
+
+.card__link {
+    color: inherit;
+    display: block;
+    transition: box-shadow $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus {
+         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+
+
+.card__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity $transition-duration $transition-timing-function,
+        transform $transition-duration $transition-timing-function;
+}
+
+.card__link:hover .card-overlay,
+.card__link:focus .card-overlay
+ {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-overlay__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: $light-maintext-color;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.card__content {
+    padding: 20px 24px;
+}
+
+.card__title {
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.card__text {
+    color: $paragraph-color;
+        font-size: 16px;
+        line-height: 1.88;
+}
