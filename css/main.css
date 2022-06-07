@@ -53,8 +53,13 @@ body {
 
 .page-header {
   border-bottom: 1px solid #ececec;
-  padding-bottom: 16px;
-  padding-top: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
 }
 
 .logo {
@@ -66,6 +71,18 @@ body {
   letter-spacing: 0.03em;
   color: #2196F3;
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .page-header__logo {
@@ -84,8 +101,166 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .navigation__list {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.navigation__item {
+  margin-right: 50px;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link:hover, .navigation__link:focus, .navigation__link--active {
+  color: #2196F3;
+}
+
+.navigation__link--active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+.contact {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.contact__item {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.contact__item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contact__link:hover, .contact__link:focus {
+  color: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .container-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.contact__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .menu__button {
@@ -99,6 +274,12 @@ body {
   display: inline-flex;
 }
 
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
+
 .menu__button:hover,
 .menu__button:focus {
   color: #2196F3;
@@ -106,10 +287,6 @@ body {
 
 .menu__icon {
   fill: currentColor;
-}
-
-.contact {
-  display: none;
 }
 
 .backdrop {
@@ -724,6 +901,18 @@ body {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .address-container {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-container {
+    margin-right: 70px;
+  }
+}
+
 .footer__logo {
   color: #ffffff;
 }
@@ -731,6 +920,18 @@ body {
 .logo--position {
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo--position {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo--position {
+    text-align: start;
+  }
 }
 
 .address__item {
@@ -742,6 +943,12 @@ body {
   text-align: center;
   color: #ffffff;
   margin-bottom: 9px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__item {
+    text-align: start;
+  }
 }
 
 .address__item:last-child {
@@ -765,6 +972,12 @@ body {
 
 .address__list {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__list {
+    margin-bottom: 0;
+  }
 }
 
 .footer-socials__title {
@@ -823,6 +1036,36 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .container--flexible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mailing__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mailing {
+    margin-left: auto;
+  }
+}
+
 .footer-mailing__title {
   font-weight: 700;
   font-size: 14px;
@@ -832,6 +1075,12 @@ body {
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mailing__title {
+    text-align: start;
+  }
 }
 
 .footer-form__input {
@@ -844,6 +1093,25 @@ body {
   height: 50px;
   padding: 0 16px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 385px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    margin-bottom: 0;
+  }
 }
 
 .footer-form__input:focus-within {

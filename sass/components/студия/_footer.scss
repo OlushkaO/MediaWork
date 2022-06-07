@@ -4,16 +4,28 @@
 }
 
 // // address footer block
-// .address-container {
-//     width: 231px;
-//     margin-right: 70px;
-// }
+.address-container {
+@media screen and (min-width: 768px) {
+    margin-right: 165px;
+}
+@media screen and (min-width: 1200px) {
+
+        margin-right: 70px;
+}
+}
 .footer__logo {
     color: $light-logo-color;
 }
 .logo--position {
     text-align: center ;
     margin-bottom: 20px;
+
+@media screen and (min-width: 1200px) {
+    margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+    text-align: start;
+}
 }
 
 
@@ -26,6 +38,10 @@
     text-align: center;
     color: $light-maintext-color;
     margin-bottom: 9px;
+
+@media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 .address__item:last-child {
     margin-bottom: 0;
@@ -48,6 +64,10 @@
 
 .address__list {
     margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+
+}
 }
 
 // // footer socials 
@@ -63,7 +83,6 @@
     color: $light-maintext-color;
 
     margin-bottom: 20px;
-    // margin-bottom: 30px;
 }
 
 .footer-socials__list {
@@ -104,20 +123,26 @@
 }
 
 
-// .container--flexible {
-//     display: flex;
-//     align-items: baseline;
-// }
+.container--flexible {
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+}
 
 
 // // footer-mailing
 
-// .footer-mailing__container {
-//     display: flex;
-// }
-// .footer-mailing {
-//     margin-left: auto;
-// }
+.footer-mailing__container {
+@media screen and (min-width: 1200px) { 
+    display: flex; }
+}
+.footer-mailing {
+@media screen and (min-width: 1200px) { 
+    margin-left: auto; }
+}
 
 .footer-mailing__title {
     font-weight: 700;
@@ -126,6 +151,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
+@media screen and (min-width: 1200px) {
+    text-align: start;
+    }
 
     color: $light-maintext-color;
     margin-bottom: 20px;
@@ -136,13 +164,26 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: $footer-background-color;
-    // width: 450px;
+@media screen and (min-width: 768px) {
+    width: 450px;
+}
+    
     width: 100%;
-//     width: 385px;
+
+@media screen and (min-width: 1200px) {
+    width: 385px;
+    margin-right: 10px;
+}
+
     height: 50px;
     padding: 0 16px;
-//     margin-right: 10px;
-margin-bottom: 20px;
+
+     
+    margin-bottom: 20px;
+
+@media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+}
 }
 
 .footer-form__input:focus-within {
