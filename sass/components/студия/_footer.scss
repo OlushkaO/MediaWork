@@ -5,27 +5,31 @@
 
 // // address footer block
 .address-container {
-@media screen and (min-width: 768px) {
-    margin-right: 165px;
-}
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
 
         margin-right: 70px;
+    }
 }
-}
+
 .footer__logo {
     color: $light-logo-color;
 }
+
 .logo--position {
-    text-align: center ;
+    text-align: center;
     margin-bottom: 20px;
 
-@media screen and (min-width: 1200px) {
-    margin-right: 0;
-}
-@media screen and (min-width: 1200px) {
-    text-align: start;
-}
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }
 
 
@@ -39,13 +43,15 @@
     color: $light-maintext-color;
     margin-bottom: 9px;
 
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         text-align: start;
     }
 }
+
 .address__item:last-child {
     margin-bottom: 0;
 }
+
 .address__link {
     font-style: normal;
     font-weight: 400;
@@ -55,19 +61,20 @@
     color: rgba(255, 255, 255, 0.6);
 
     transition: color $transition-duration $transition-timing-function;
-    
+
     &:hover,
     &:focus {
-            color: $hover-color;
-        }
+        color: $hover-color;
+    }
 }
 
 .address__list {
     margin-bottom: 60px;
-@media screen and (min-width: 1200px) {
-    margin-bottom: 0;
 
-}
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+
+    }
 }
 
 // // footer socials 
@@ -79,6 +86,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+
+    }
 
     color: $light-maintext-color;
 
@@ -94,6 +106,7 @@
 
 .footer-socials__item {
     margin-right: 10px;
+
 }
 
 .footer-socials__item:last-child {
@@ -124,24 +137,27 @@
 
 
 .container--flexible {
-@media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-}
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+    }
 }
 
 
 // // footer-mailing
 
 .footer-mailing__container {
-@media screen and (min-width: 1200px) { 
-    display: flex; }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
+
 .footer-mailing {
-@media screen and (min-width: 1200px) { 
-    margin-left: auto; }
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .footer-mailing__title {
@@ -151,8 +167,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-@media screen and (min-width: 1200px) {
-    text-align: start;
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
     }
 
     color: $light-maintext-color;
@@ -164,26 +181,27 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: $footer-background-color;
-@media screen and (min-width: 768px) {
-    width: 450px;
-}
-    
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
     width: 100%;
 
-@media screen and (min-width: 1200px) {
-    width: 385px;
-    margin-right: 10px;
-}
+    @media screen and (min-width: 1200px) {
+        width: 385px;
+        margin-right: 10px;
+    }
 
     height: 50px;
     padding: 0 16px;
 
-     
+
     margin-bottom: 20px;
 
-@media screen and (min-width: 1200px) {
-    margin-bottom: 0;
-}
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-form__input:focus-within {
@@ -210,12 +228,12 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    
+
     color: $light-maintext-color;
-    
+
     cursor: pointer;
     background-color: $logo-color;
-    
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 0 28px;
@@ -227,11 +245,9 @@
     justify-content: center;
 
     &__text {
-    margin-right: 10px;
-        }
+        margin-right: 10px;
+    }
 
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
