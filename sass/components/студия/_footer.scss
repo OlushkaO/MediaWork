@@ -22,6 +22,7 @@
 .logo--position {
     text-align: center;
     margin-bottom: 20px;
+    padding: 0;
 
     @media screen and (min-width: 1200px) {
         margin-right: 0;
@@ -77,7 +78,14 @@
     }
 }
 
-// // footer socials 
+.footer-socials {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
+}
 
 .footer-socials__title {
     font-weight: 700;
@@ -101,7 +109,7 @@
     display: flex;
     justify-content: center;
 
-    margin-bottom: 60px;
+
 }
 
 .footer-socials__item {
@@ -176,6 +184,15 @@
     margin-bottom: 20px;
 }
 
+.footer-form {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+
+}
+
 .footer-form__input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -196,12 +213,6 @@
     height: 50px;
     padding: 0 16px;
 
-
-    margin-bottom: 20px;
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 0;
-    }
 }
 
 .footer-form__input:focus-within {

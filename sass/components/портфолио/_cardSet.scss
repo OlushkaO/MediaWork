@@ -9,10 +9,15 @@
 
 .card-set__item {
 
-    margin: 15px;
     border: #eeeeee solid 1px;
 
+    @media screen and (max-width: 767.9px) {
+        margin-bottom: 30px;
+
+    }
+
     @media screen and (min-width: 768px) {
+        margin: 15px;
         display: flex;
         flex-basis: calc((100% - 2 * 30px) / 2);
     }
@@ -22,6 +27,13 @@
     }
 
 
+}
+
+.card-set__item:last-child {
+    @media screen and (max-width: 767.9px) {
+        margin-bottom: 0;
+
+    }
 }
 
 .card__link {
@@ -54,6 +66,7 @@
     transform: translateY(100%);
     transition: opacity $transition-duration $transition-timing-function,
         transform $transition-duration $transition-timing-function;
+    overflow-y: scroll;
 }
 
 .card__link:hover .card-overlay,
